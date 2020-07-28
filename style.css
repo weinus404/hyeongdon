@@ -1,0 +1,70 @@
+body {
+    background-image : url('dia.PNG');
+}
+
+
+
+
+.tit {
+  font-family: 굴림;
+  color: black;
+  font-size: 30px;
+}
+
+.tit:hover {
+  font-family: 궁서;
+  color: blue;
+  font-size: 30px;
+  cursor:wait;
+
+}
+
+.gg{
+
+    animation: rotate 2s linear infinite;
+
+    transform-origin: 50% 50%;
+
+}
+
+ 
+
+@keyframes rotate{
+
+	100% {
+
+    	transform: rotate(360deg);
+
+    }
+
+}
+
+#goza {
+    font-size: 70px;
+    color: red;
+    font-family: 맑은고딕;
+    animation-duration: 1s; 
+    animation-name: rainbowLink, rotate; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes rainbowLink {     
+    0% { color: #ff2a2a; }
+    15% { color: #ff7a2a; }
+    30% { color: #ffc52a; }
+    45% { color: #43ff2a; }
+    60% { color: #2a89ff; }
+    75% { color: #202082; }
+    90% { color: #6b2aff; } 
+    100% { color: #e82aff; }
+   }
+
+#goza:hover {
+    animation-play-state: paused;
+    cursor: wait;
+
+}
+
+#junsik:hover {
+    cursor: crosshair;
+}
